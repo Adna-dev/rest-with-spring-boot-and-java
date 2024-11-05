@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    container_name: postgresql-project
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: project
+    ports:
+      - "5432:5432"
